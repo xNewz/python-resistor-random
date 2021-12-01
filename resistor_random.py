@@ -22,3 +22,24 @@ def decode_resistor_colors(bands):
     code = bands.split(" ")
     code.append(ran_c4)
     print(code)
+
+    if int(res[code[2]]) == 0:
+        power = int(res[code[0]] + res[code[1]]) * 1
+    elif int(res[code[2]]) == 1:
+        power = int(res[code[0]] + res[code[1]]) * 10
+    elif int(res[code[2]]) == 2:
+        power = int(res[code[0]] + res[code[1]]) * 100
+    elif int(res[code[2]]) == 3:
+        power = int(res[code[0]] + res[code[1]]) * 1000
+    elif int(res[code[2]]) == 4:
+        power = int(res[code[0]] + res[code[1]]) * 10000
+    elif int(res[code[2]]) == 5:
+        power = int(res[code[0]] + res[code[1]]) * 100000
+    elif int(res[code[2]]) == 6:
+        power = int(res[code[0]] + res[code[1]]) * 1000000
+    elif int(res[code[2]]) == 7:
+        power = int(res[code[0]] + res[code[1]]) * 10000000
+    elif int(res[code[2]]) == 10:
+        power = int(res[code[0]] + res[code[1]]) * 0.1
+    elif int(res[code[2]]) == 11:
+        power = int(res[code[0]] + res[code[1]]) * 0.01
