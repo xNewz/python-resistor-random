@@ -43,3 +43,17 @@ def decode_resistor_colors(bands):
         power = int(res[code[0]] + res[code[1]]) * 0.1
     elif int(res[code[2]]) == 11:
         power = int(res[code[0]] + res[code[1]]) * 0.01
+
+    if power < 1000:
+        output = str(round(power, 2)) + ' ohm'
+    elif power < 1000000:
+        if int(power / 1000) == float((power / 1000)):
+            output = str(int(power / 1000)) + 'k ohm'
+        else:
+            output = str(power / 1000) + 'k ohm'
+
+    else:
+        if int(power / 1000000) == float(power / 1000000):
+            output = str(int(power / 1000000)) + 'M ohm'
+        else:
+            output = str(float(power / 1000000)) + 'M ohm'
