@@ -57,3 +57,8 @@ def decode_resistor_colors(bands):
             output = str(int(power / 1000000)) + 'M ohm'
         else:
             output = str(float(power / 1000000)) + 'M ohm'
+
+    if ran_c4 == 'gold':
+        output += (' 5%')
+    elif ran_c4 == 'silver':
+        output += (' 10%')
