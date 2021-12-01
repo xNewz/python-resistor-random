@@ -62,3 +62,5 @@ def decode_resistor_colors(bands):
         output += (' 5%')
     elif ran_c4 == 'silver':
         output += (' 10%')
+
+    answer = input('enter answer [1k ohm 5%]: ')
