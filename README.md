@@ -10,5 +10,5 @@ Improve reading color resistance skills.
 ## *Author Name*
 [`Pargorn Ruasijan (xNewz)`](https://github.com/xNewz)
 
-## Image
+## Screenshot
 <div align="center"><img src="https://github.com/xNewz/python-resistor-random/blob/main/img.gif"></div>
