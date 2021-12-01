@@ -64,3 +64,8 @@ def decode_resistor_colors(bands):
         output += (' 10%')
 
     answer = input('enter answer [1k ohm 5%]: ')
+
+    if answer == output:
+        print('Correct !')
+    else:
+        print('Incorrect')
