@@ -69,3 +69,6 @@ def decode_resistor_colors(bands):
         print('Correct !')
     else:
         print('Incorrect')
+
+    time.sleep(time_delay)
+    return output
