@@ -72,3 +72,5 @@ def decode_resistor_colors(bands):
 
     time.sleep(time_delay)
     return output
+
+print('Answer is:',decode_resistor_colors(ran))
