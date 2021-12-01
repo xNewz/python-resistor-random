@@ -12,3 +12,7 @@ ran_c1 = random.choice(color1)
 ran_c2 = random.choice(color2)
 ran_c3 = random.choice(color3)
 ran_c4 = random.choice(color4)
+
+all_ran = ran_c1,ran_c2,ran_c3
+ran = ' '.join(all_ran)
+power = 0
