@@ -16,3 +16,5 @@ ran_c4 = random.choice(color4)
 all_ran = ran_c1,ran_c2,ran_c3
 ran = ' '.join(all_ran)
 power = 0
+
+def decode_resistor_colors(bands):
